@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz</title>
+</head>
+<body style="background:black; color:white; text-align:center;">
+
+<h2>Excel Quiz</h2>
+
+<p>SUM function kya karta hai?</p>
+
+<button onclick="check(true)">Add numbers</button><br><br>
+<button onclick="check(false)">Delete data</button><br><br>
+<button onclick="check(false)">Sort data</button>
+
+<p id="result"></p>
+
+<script>
+function check(ans){
+if(ans){
+document.getElementById("result").innerHTML="Correct ✅";
+}else{
+document.getElementById("result").innerHTML="Wrong ❌";
+}
+}
+</script>
+
+</body>
+</html>
